@@ -19,3 +19,22 @@ def determine_winner(user_choice, cpu_choice):
         return "User"
     else:
         return "CPU"
+
+# Implement function to play a single round of the game
+def play_round():
+    
+    # Get user's choice
+    user_choice = input("Choose 'Bear', 'Cowboy', or 'Ninja': ").capitalize()
+
+    # Validate user input
+    while user_choice not in ['Bear', 'Cowboy', 'Ninja']:
+        print("Invalid choice! Please choose 'Bear', 'Cowboy', or 'Ninja'.")
+        user_choice = input("Choose 'Bear', 'Cowboy', or 'Ninja': ").capitalize()
+
+    # Get CPU's choice
+    cpu_choice = get_cpu_choice()
+    print(f"CPU chose: {cpu_choice}")
+
+    # Determine the winner
+    winner = determine_winner(user_choice, cpu_choice)
+    return winner
