@@ -17,7 +17,7 @@ def get_cpu_choice():
 
 # Add function to determine the winner based on user and CPU choices
 def determine_winner(user_choice, cpu_choice):
-       """
+    """
             Determines the winner based on user and CPU choices.
             
             Args:
