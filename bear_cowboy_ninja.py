@@ -18,14 +18,14 @@ def get_cpu_choice():
 # Add function to determine the winner based on user and CPU choices
 def determine_winner(user_choice, cpu_choice):
     """
-            Determines the winner based on user and CPU choices.
+        Determines the winner based on user and CPU choices.
             
-            Args:
-                user_choice (str): The user's choice ('Bear', 'Cowboy', or 'Ninja').
-                cpu_choice (str): The CPU's choice ('Bear', 'Cowboy', or 'Ninja').
+        Args:
+            user_choice (str): The user's choice ('Bear', 'Cowboy', or 'Ninja').
+            cpu_choice (str): The CPU's choice ('Bear', 'Cowboy', or 'Ninja').
             
-            Returns:
-                str: The winner of the round ('User', 'CPU', or 'Tie').
+        Returns:
+            str: The winner of the round ('User', 'CPU', or 'Tie').
     """
     if user_choice == cpu_choice:
         return "Tie"
@@ -38,12 +38,12 @@ def determine_winner(user_choice, cpu_choice):
 
 # Implement function to play a single round of the game
 def play_round():
-   """
+    """
         Plays one round of the game, gets user input, CPU's choice, and determines the winner.
         
         Returns:
             str: The winner of the round ('User', 'CPU', or 'Tie').
-    """    
+    """
     # Get user's choice
     user_choice = input("Choose 'Bear', 'Cowboy', or 'Ninja': ").capitalize()
 
