@@ -77,3 +77,7 @@ def main():
     print(f"CPU Wins: {cpu_wins}")
     print(f"Ties: {ties}")
     print("Thanks for playing!")
+
+# Add entry point to run the game
+if __name__ == "__main__":
+    main()
