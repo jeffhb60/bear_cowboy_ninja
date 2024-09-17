@@ -4,3 +4,7 @@
 
 # Import random module for CPU choice
 import random
+
+# Add function to generate CPU choice
+def get_cpu_choice():
+    return random.choice(['Bear', 'Cowboy', 'Ninja'])
