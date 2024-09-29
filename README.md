@@ -1,6 +1,6 @@
 # Bear Cowboy Ninja Game
 
-This is a simple command-line game implemented in Python where a user plays against the CPU. The game is inspired by "Rock, Paper, Scissors" but with a fun twist: the choices are **Bear**, **Cowboy**, and **Ninja**. The game tracks the scores of both the user and the CPU until the user decides to stop playing.
+This is a simple graphical game implemented in Python using the tkinter library, where a user plays against the CPU. The game is inspired by "Rock, Paper, Scissors," but with a fun twist: the choices are Bear, Cowboy, and Ninja. The game keeps track of user wins, CPU wins, and ties, and provides a final score summary when the user chooses to exit.
 
 ## Table of Contents
 
@@ -22,10 +22,12 @@ The game follows these simple rules:
 
 ## Features
 
-- Command-line interface for easy play.
-- Random choice for the CPU, ensuring a fair game.
+- Graphical User Interface built with tkinter.
+- Buttons for easy selection of Bear, Cowboy, or Ninja.
+- Randomized CPU choices for fair gameplay.
+- Visual feedback for game results (win, lose, or tie).
 - Score tracking for user wins, CPU wins, and ties.
-- Option to play multiple rounds and quit whenever desired.
+- Final game stats are displayed when the player exits the game.
 
 ## Installation
 
@@ -42,34 +44,35 @@ To run this game, you need to have Python installed on your system. If Python is
 1. **Run the game**
    ``` bash
    python bear_cowboy_ninja.py
-2. **Enter your choice** when prompted: `'Bear'`, `'Cowboy'`, or `'Ninja'`.
-3. **View the result** of the round and see the updated score.
-4. **Choose to play again or quit** by typing `'yes'` or `'no'` when asked.
-5. The game continues until you choose to quit, and the final score is displayed.
+2. **Choose your move:** Click on the button for 'Bear', 'Cowboy', or 'Ninja'.
+3. **View the result:** After making your selection, see the CPU’s choice and the result of the round displayed on the screen.
+4. **Track your score:** The game updates and displays user wins, CPU wins, and ties after each round.
+5. **Exit the game:** Click the "Exit Game" button to stop playing and view your final stats (total games, wins, and win percentage).
 
 ## Example Gameplay
+- **Main Screen:** You will see buttons for 'Bear', 'Cowboy', and 'Ninja'. Make your choice, and the CPU will choose randomly.
+- **Scoreboard:** The scoreboard at the bottom tracks user wins, CPU wins, and ties.
+- **Exit:** Upon clicking the "Exit Game" button, the game will display your final stats (wins, losses, and ties) in a message box before closing.
+
+### Example Output
   ``` plaintext
-  Welcome to the Bear Cowboy Ninja Game!
-  Choose 'Bear', 'Cowboy', or 'Ninja': Bear
-  CPU chose: Ninja
-  You win this round!
-  
-  Score: User Wins: 1 | CPU Wins: 0 | Ties: 0
-  
-  Do you want to play again? (yes/no): yes
-  Choose 'Bear', 'Cowboy', or 'Ninja': Cowboy
-  CPU chose: Bear
-  You win this round!
-  
-  Score: User Wins: 2 | CPU Wins: 0 | Ties: 0
-  
-  Do you want to play again? (yes/no): no
-  
-  Final Score:
-  User Wins: 2
-  CPU Wins: 0
-  Ties: 0
-  Thanks for playing!
+      User chose: Bear
+      CPU chose: Ninja
+      You win!
+      
+      User Wins: 1 | CPU Wins: 0 | Ties: 0
+      
+      User chose: Cowboy
+      CPU chose: Bear
+      CPU wins!
+      
+      User Wins: 1 | CPU Wins: 1 | Ties: 0
+      
+      Final Stats:
+      User Wins: 1
+      CPU Wins: 1
+      Ties: 0
+      Winning Percentage: 50.00%
   ```
 
 ## Contributing
